@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { getProjects } from "@/sanity/sanity-utils";
 import { Project } from "@/types/Project";
 import Image from "next/image";
@@ -28,9 +29,7 @@ export default async function Home() {
           >
             {project.image && (
               <Image
-                className={
-                  "object-cover rounded-lg border border-gray-500"
-                }
+                className={"object-cover rounded-lg border border-gray-500"}
                 src={project.image}
                 alt={project.name}
                 width={250}
