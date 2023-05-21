@@ -18,6 +18,10 @@ export default async function RootLayout({
   const pages = await getPages();
   return (
     <html lang="en">
+      <head>
+        <title>Portfolio</title>
+        <meta property="og:title" content="Portfolio" key="title" />
+      </head>
       <body className="max-w-3xl mx-auto py-10">
         <header className="flex items-center justify-between">
           <Link
